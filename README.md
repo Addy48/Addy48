@@ -1,10 +1,10 @@
 # Aaditya Upadhyay
 
-Computer Science student at Manipal University Jaipur. I like building something all the way through: an Android app and the API behind it, a data pipeline with real failure handling, an ML experiment someone else can re-run. I write the limits of each project into its README.
+Computer Science student at Manipal University Jaipur. I like building something all the way through: an Android app and the API behind it, a data pipeline with real failure handling, an ML experiment someone else can re-run.
 
 ## Building now: AIIMIN
 
-[**AIIMIN**](https://github.com/Addy48/AIIMIN) is a personal Life OS for India: your day, your money and your family's papers in one app. It reads bank SMS on the phone to build a month of spending, keeps tasks and focus time, and holds documents and an emergency card offline. It only compares you with you, and there are no ads, no lending and no data sales.
+[**AIIMIN**](https://github.com/Addy48/AIIMIN) is a personal Life OS: your day, your money and your family's papers in one app. It reads bank SMS on the phone to build a month of spending, keeps tasks and focus time, and holds documents and an emergency card offline. It only compares you with you, and there are no ads, no lending and no data sales.
 
 - Native Android app in Kotlin, Jetpack Compose, Hilt, Room and Navigation 3. The [4.0.0-beta01](https://github.com/Addy48/AIIMIN/releases/latest) APK is public.
 - React 19 web app at [aiimin.in](https://aiimin.in), and a Hono + Better Auth + Supabase API behind both.
