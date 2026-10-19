@@ -1,23 +1,32 @@
-# Hi, I'm Aaditya
+# Aaditya Upadhyay
 
-I build software and data systems, from a native Android app to cloud data pipelines and machine-learning projects.
+Computer Science student at Manipal University Jaipur. I like building something all the way through: an Android app and the API behind it, a data pipeline with real failure handling, an ML experiment someone else can re-run. I write the limits of each project into its README.
 
-## Main project
+## Building now: AIIMIN
 
-**[AIIMIN](https://github.com/Addy48/AIIMIN)** is a personal Life OS: habits, money, calendar, focus, journal and family documents in one place. It has a native Android app (Kotlin, Jetpack Compose), a React website at [aiimin.in](https://aiimin.in) and a Node API on Supabase. The Android public beta is out.
+[**AIIMIN**](https://github.com/Addy48/AIIMIN) is a personal Life OS for India: your day, your money and your family's papers in one app. It reads bank SMS on the phone to build a month of spending, keeps tasks and focus time, and holds documents and an emergency card offline. It only compares you with you, and there are no ads, no lending and no data sales.
 
-## Other work
+- Native Android app in Kotlin, Jetpack Compose, Hilt, Room and Navigation 3. The [4.0.0-beta01](https://github.com/Addy48/AIIMIN/releases/latest) APK is public.
+- React 19 web app at [aiimin.in](https://aiimin.in), and a Hono + Better Auth + Supabase API behind both.
+- Two branches: `main` is the live site, `dev` is where work happens.
 
-| Project | What it is |
+## Data engineering
+
+| Project | What it does |
 |---|---|
-| [automated-data-pipeline](https://github.com/Addy48/automated-data-pipeline) | S&P 500 and Nifty 50 ETL into an S3 medallion lake (Glue, Athena) with a Streamlit view. Terraform and GitHub Actions. |
-| [alphaflow-market-pipeline](https://github.com/Addy48/alphaflow-market-pipeline) | Dual-exchange market data platform with observability. |
-| [llm-log-explainer](https://github.com/Addy48/llm-log-explainer) | Docker log generator and FastAPI explainer. |
-| [urban-crime-intelligence](https://github.com/Addy48/urban-crime-intelligence) | Crime analytics with scikit-learn, FastAPI, Docker and Power BI. |
-| [EEG-Stress-Detection-](https://github.com/Addy48/EEG-Stress-Detection-) | Code for "Inter-Subject Variability in EEG-Based Stress Detection" (accepted at IBCD 2026). |
-| [cps-fault-prediction](https://github.com/Addy48/cps-fault-prediction) | Distributed fault prediction on NASA C-MAPSS. |
-| [bw-image-colorizer](https://github.com/Addy48/bw-image-colorizer) | Black-and-white image colorization with OpenCV DNN and a Tkinter GUI. |
+| [automated-data-pipeline](https://github.com/Addy48/automated-data-pipeline) | S&P 500 and Nifty 50 daily bars (about 550 tickers, 138k rows a year) into a bronze / silver / gold S3 lake with Pandera gates, Glue and Athena, Terraform, and a Streamlit dashboard. A failed stage or upload fails the run and the exit code says so. |
+| [alphaflow-market-pipeline](https://github.com/Addy48/alphaflow-market-pipeline) | The same two exchanges as a factor mart (14 vectorised factors) plus a serverless alert sentinel on Lambda, EventBridge and DynamoDB. [Live terminal](https://alphaflow-terminal.vercel.app). |
 
-## Tools I use
+## Machine learning and research
 
-Kotlin, Jetpack Compose, Python, React, Node, FastAPI, Docker, Terraform, AWS, Supabase, GitHub Actions.
+| Project | What it shows |
+|---|---|
+| [EEG-Stress-Detection-](https://github.com/Addy48/EEG-Stress-Detection-) | Seven classifiers and three ensembles on the SAM 40 EEG dataset. Subject-dependent accuracy reaches 97.4%; the file-group split tops out at 55.3%. Manuscript under submission; the repo says exactly what the numbers do and do not show, and the tables rebuild from the saved results. |
+| [cps-fault-prediction](https://github.com/Addy48/cps-fault-prediction) | Distributed fault prediction on NASA C-MAPSS. Test F1 0.839 distributed vs 0.841 centralised, and with 30% of nodes dropped the distributed model holds 0.856 while the centralised one fails (0.000). |
+| [llm-log-explainer](https://github.com/Addy48/llm-log-explainer) | Three Docker services: a log generator, a FastAPI explainer and a small dashboard. Co-built with Rasagya Vatsal. |
+| [urban-crime-intelligence](https://github.com/Addy48/urban-crime-intelligence) | California police incidents: KMeans risk clusters, an arrest model, a FastAPI service and a Power BI view. |
+| [bw-image-colorizer](https://github.com/Addy48/bw-image-colorizer) | Inference wrapper and Tkinter GUI for the Zhang et al. 2016 colourisation network. |
+
+## Stack
+
+Kotlin and Compose · Python (pandas, scikit-learn, FastAPI) · TypeScript and React · Node and Hono · Postgres and Supabase · AWS (S3, Glue, Athena, Lambda) · Terraform · Docker · GitHub Actions
