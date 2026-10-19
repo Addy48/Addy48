@@ -22,7 +22,7 @@ Computer Science student at Manipal University Jaipur. I like building something
 | Project | What it shows |
 |---|---|
 | [EEG-Stress-Detection-](https://github.com/Addy48/EEG-Stress-Detection-) | Seven classifiers and three ensembles on the SAM 40 EEG dataset. Subject-dependent accuracy reaches 97.4%; the file-group split tops out at 55.3%. Manuscript under submission; the repo says exactly what the numbers do and do not show, and the tables rebuild from the saved results. |
-| [cps-fault-prediction](https://github.com/Addy48/cps-fault-prediction) | Distributed fault prediction on NASA C-MAPSS. Test F1 0.839 distributed vs 0.841 centralised, and with 30% of nodes dropped the distributed model holds 0.856 while the centralised one fails (0.000). |
+| [cps-fault-prediction](https://github.com/Addy48/cps-fault-prediction) | Fault prediction on all four NASA C-MAPSS datasets: six classical models, a five-node distributed LightGBM setup, cross-dataset transfer, RUL regression and deployment cost. Best centralised F1 is 0.947 (FD003); distribution costs 0.013 to 0.032 F1 on clean data. |
 | [llm-log-explainer](https://github.com/Addy48/llm-log-explainer) | Three Docker services: a log generator, a FastAPI explainer and a small dashboard. Co-built with Rasagya Vatsal. |
 | [urban-crime-intelligence](https://github.com/Addy48/urban-crime-intelligence) | California police incidents: KMeans risk clusters, an arrest model, a FastAPI service and a Power BI view. |
 | [bw-image-colorizer](https://github.com/Addy48/bw-image-colorizer) | Inference wrapper and Tkinter GUI for the Zhang et al. 2016 colourisation network. |
